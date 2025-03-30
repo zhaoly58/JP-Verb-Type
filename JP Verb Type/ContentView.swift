@@ -23,13 +23,13 @@ enum ConjugationType: String, CaseIterable {
 
 struct ContentView: View {
     //    @State private var userInputs: [String: String] = [:]
-    //    @State private var checked = false
+    //    @State private var isChecked = false
     
     @SwiftUI.State private var userInputs: [String: String] = [:]
-    @SwiftUI.State private var checked: Bool = false
+    @SwiftUI.State private var isChecked: Bool = false
     
     //    private var userInputs: [String: String] = [:]
-    //    private var checked = false
+    //    private var isChecked = false
     
     let verbs: [VerbConjugation] = [
         // 一段動詞 (ru-verbs)
@@ -857,7 +857,7 @@ struct ContentView: View {
                                 .padding(5)
                                 .frame(width: 100, height: 40)
                                 .background(
-                                    checked
+                                    isChecked
                                     ? (userInputs[key]?.trimmingCharacters(
                                         in: .whitespaces)
                                        == verb.answers[type]
@@ -877,19 +877,19 @@ struct ContentView: View {
             }
             
             Button("回答を確認する") {
-                checked = true
+                isChecked = true
             }
             .padding()
             .background(Color.blue)
             .foregroundColor(.white)
             .cornerRadius(10)
             
-            Button("リセット") {
-                userInputs = [:]
-                checked = false
-            }
-            .foregroundColor(.red)
-            .padding()
+//            Button("リセット") {
+//                userInputs = [:]
+//                isChecked = false
+//            }
+//            .foregroundColor(.red)
+//            .padding()
         }
     }
 }
