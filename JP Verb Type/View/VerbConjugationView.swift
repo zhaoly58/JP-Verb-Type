@@ -880,11 +880,3 @@ struct VerbConjugationView: View {
         }
     }
 }
-
-//struct VerbPracticeApp: App {
-//    var body: some Scene {
-//        WindowGroup {
-//            ContentView()
-//        }
-//    }
-//}

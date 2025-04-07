@@ -14,7 +14,7 @@ struct HomeView: View {
                     VerbConjugationView()
                 }
                 .buttonStyle(.borderedProminent)
-
+                
                 NavigationLink("Flashcard Practice (Adverbs)") {
                     FlashcardPracticeView()
                 }
