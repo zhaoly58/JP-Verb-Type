@@ -836,7 +836,6 @@ struct ContentView: View {
             }
             
             ScrollView {
-                
                 VStack(spacing: 8) {
                     // Data rows
                     ForEach(verbs) { verb in
@@ -884,12 +883,14 @@ struct ContentView: View {
             .foregroundColor(.white)
             .cornerRadius(10)
             
-//            Button("リセット") {
-//                userInputs = [:]
-//                isChecked = false
-//            }
-//            .foregroundColor(.red)
-//            .padding()
+            Button("リセット") {
+                userInputs = [:]
+                isChecked = false
+            }
+            .foregroundColor(.red)
+            .cornerRadius(10)
+            .padding()
+            
         }
     }
 }
