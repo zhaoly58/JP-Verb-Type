@@ -11,7 +11,7 @@ import SwiftUI
 struct JP_Verb_TypeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
