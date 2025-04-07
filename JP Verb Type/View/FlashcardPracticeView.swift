@@ -13,9 +13,9 @@ struct FlashcardPracticeView: View {
     
     let flashcards: [FlashcardItem] = [
         FlashcardItem(word: "ゆっくり", correctMeaning: "slowly", options: ["quickly", "slowly", "noisily", "heavily"]),
-        FlashcardItem(word: "びっくり", correctMeaning: "surprised", options: ["angry", "surprised", "bored", "sleepy"]),
-        FlashcardItem(word: "しっかり", correctMeaning: "firmly", options: ["roughly", "firmly", "lazily", "fast"]),
-        FlashcardItem(word: "のんびり", correctMeaning: "leisurely", options: ["strictly", "leisurely", "roughly", "heavily"]),
+        FlashcardItem(word: "びっくり", correctMeaning: "surprised", options: ["angry", "bored", "sleepy", "surprised"]),
+        FlashcardItem(word: "しっかり", correctMeaning: "firmly", options: ["firmly", "roughly", "lazily", "fast"]),
+        FlashcardItem(word: "のんびり", correctMeaning: "leisurely", options: ["strictly", "roughly", "leisurely", "heavily"]),
         FlashcardItem(word: "きっぱり", correctMeaning: "clearly", options: ["softly", "clearly", "quickly", "gradually"]),
         FlashcardItem(word: "ぐっすり", correctMeaning: "soundly (sleep)", options: ["noisily", "happily", "soundly (sleep)", "awkwardly"]),
         FlashcardItem(word: "たっぷり", correctMeaning: "plenty", options: ["few", "slowly", "plenty", "firmly"]),
