@@ -90,12 +90,21 @@ struct FlashcardPracticeView: View {
             }
             
             if showResult {
-                Button("Next") {
-                    currentIndex = (currentIndex + 1) % flashcards.count
+                Button(action: {currentIndex = (currentIndex + 1) % flashcards.count
                     selectedOption = nil
-                    showResult = false
+                    showResult = false})
+                {
+                    
+                    Text("Next")
+                        .foregroundColor(.green)
+                        .frame(width: UIScreen.main.bounds.width*0.2, height: 50, alignment: .center)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(Color.green, lineWidth: 1)
+                            
+                        )
                 }
-                .padding()
+                
             }
         }
         .padding()
