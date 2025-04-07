@@ -878,5 +878,7 @@ struct VerbConjugationView: View {
             .padding()
             
         }
+        .padding()
+        .navigationTitle("Verb Conjugation")
     }
 }
