@@ -12,6 +12,7 @@ struct JP_Verb_TypeApp: App {
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .preferredColorScheme(.light) // Forces light mode
         }
     }
 }
