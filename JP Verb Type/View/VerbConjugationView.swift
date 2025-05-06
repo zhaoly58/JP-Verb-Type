@@ -873,7 +873,8 @@ struct VerbConjugationView: View {
                 userInputs = [:]
                 isChecked = false
             }
-            .foregroundColor(.red)
+            .background(Color.red)
+            .foregroundColor(.white)
             .cornerRadius(10)
             .padding()
             
