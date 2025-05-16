@@ -869,7 +869,7 @@ struct VerbConjugationView: View {
             .foregroundColor(.white)
             .cornerRadius(10)
             
-            Button("リセット") {
+            Button("Reset") {
                 userInputs = [:]
                 isChecked = false
             }
@@ -880,6 +880,6 @@ struct VerbConjugationView: View {
             
         }
         .padding()
-        .navigationTitle("Verb Conjugation")
+        .navigationTitle("Japanese Verb Conjugation")
     }
 }
